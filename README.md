@@ -6,6 +6,8 @@ High-resolution satellite videos are playing an increasingly important role as a
 
 <img src="demo/airplane-1.gif">
 
+<img src="demo/train-1.gif">
+
 ## Main Results
 
 We compared the ThickSiam Framework with other 19 state-of-the-art trackers including CF-based and DL-based methods with different features and backbones. They are MOSSE, CSK, KCF, CN, DSST, Staple, SiamFC, DCFNet, ECO, STRCF, ATOM, DiMP, SiamFC+, SiamRPN+, SiamRPN++, SiamFC++ and ID-DSN. The comparison results are shown in the following Table.
