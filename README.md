@@ -5,7 +5,7 @@
 High-resolution satellite videos are playing an increasingly important role as a means of monitoring dynamic ground targets. Currently, satellite video object tracking is confronted with small size, partial occlusion, residual shadow, poor target-background discriminability, shape deformation and poor general field illumination challenges. To solve the above problems, we design a ThickSiam framework, which consists of a Thickened Residual Block Siamese Network (TRBS-Net) and an Improved Kalman Filter (IKF) module. The TRBSNet is stacked by well-designed thickened residual blocks and thickened maxpooling residual block, while the IKF module is designed to simultaneously correct the trajectory and size of the target. We propose an N-frame-convergence mechanism to deal with the burn-in period problem existed in IKF module and weightedly combine the results of TRBS-Net and IKF modules. We also construct a testing dataset suitable for satellite video object tracking task. We conducted ablation experiments on the constructed dataset and compared the proposed ThickSiam framework with other nineteen state-of-the-art trackers including different features and backbones. The comparison results show that our ThickSiam tracker obtained a precision value of 0.991 and a success value of 0.755 with a frames per second (FPS) value of 56.849 implemented on a single NVIDIA GTX1070Ti GPU.
 
 
-<div align=center>
+<!-- <div align=center>
 <img src = "demo/airplane-1.gif" />
 </div>
 
@@ -15,7 +15,14 @@ High-resolution satellite videos are playing an increasingly important role as a
 <img src = "demo/train-1.gif" width="240" height="480" />
 </div>
 
-<center>The tracking results of train-1 target</center>
+<center>The tracking results of train-1 target</center> -->
+
+<center>
+<figure>
+<img src="demo/airplane-1.gif" />
+<img src="demo/train-1.gif" width="240" height="480" />
+</figure>
+</center>
 
 ## Main Results
 
@@ -29,7 +36,7 @@ We compared the ThickSiam Framework with other 19 state-of-the-art trackers incl
 | CN(2014)                       | CF-based | Color Table          | -                               | - | 0.859     | 0.609   | 8.763   |
 | DSST(2014)                     | CF-based | HOG                  | -                               | - | 0.782     | 0.596   | 9.72    |
 | Staple(2016)                   | CF-based | HOG+Color Histogram  | -                               | - | 0.776     | 0.58    | 10.887  |
-| SiamFC                         | DL-based | CNN Features         | AlexNet                         | √ | 0.902     | 0.663   | <font color=#00B050 >**127.174**</font> |
+| SiamFC                         | DL-based | CNN Features         | AlexNet                         | √ | 0.902     | 0.663   | 127.174 |
 | DCFNet(2017)                   | CF-based | CNN Features         | conv1 from VGG                  | √ | 0.833     | 0.644   | 12.4    |
 | ECO(2017)                      | CF-based | CNN Features         | ResNet18 with vgg-m conv1 layer | - | 0.856     | 0.645   | 3.998   |
 | STRCF(2018)                    | CF-based | HOG+Color Table      | -                               | - | 0.795     | 0.557   | 7.498   |
@@ -37,14 +44,13 @@ We compared the ThickSiam Framework with other 19 state-of-the-art trackers incl
 | DiMP(2019)                     | DL-based | CNN Features         | ResNet18                        | √ | 0.717     | 0.545   | 12.697  |
 | DiMP(2019)                     | DL-based | CNN Features         | ResNet50                        | √ | 0.747     | 0.597   | 11.239  |
 | SiamFC+(2019)                  | DL-based | CNN Features         | ResNet22                        | √ | 0.839     | 0.652   | 59.333  |
-| SIamRPN+(2019)                 | DL-based | CNN Features         | ResNet22                        | √ | 0.878     | 0.618   | <font color=#0070C0 >**114.867**</font> |
-| SiamRPN++(2019)                | DL-based | CNN Features         | AlexNet                         | √ | 0.883     | 0.656   | <font color=#FF000 >**144.783**</font> |
+| SIamRPN+(2019)                 | DL-based | CNN Features         | ResNet22                        | √ | 0.878     | 0.618   | 114.867 |
+| SiamRPN++(2019)                | DL-based | CNN Features         | AlexNet                         | √ | 0.883     | 0.656   | **144.783** |
 | SiamRPN++(2019)                | DL-based | CNN Features         | ResNet50                        | √ | 0.828     | 0.655   | 31.617  |
-| SiamFC++(2020)                 | DL-based | CNN Features         | AlexNet                         | √ | <font color=#0070C0 >**0.925**</font> | <font color=#0070C0 >**0.699**</font>   | <font color=#ED8030 >**139.828**</font> |
-| ID-DSN（2021）                  | DL-based | CNN Features         | ResNet50                        | √ | <font color=#00B050 >**0.933**</font> | <font color=#00B050 >**0.718**</font>   | 31.167  |
-| ThickSiam (ours, TRBS-Net)     | DL-based | CNN Features         | TRB+TMRB                        | √ | <font color=#ED8030 >**0.959**</font> | <font color=#ED8030 >**0.721**</font>   | 56.758  |
-| ThickSiam (ours, TRBS-Net+IKF) | DL-based | CNN Features         | TRB+TMRB                        | √ | <font color=#FF000 >**0.991**</font>  | <font color=#FF000 >**0.755**</font>    | 56.758  |
-
+| SiamFC++(2020)                 | DL-based | CNN Features         | AlexNet                         | √ | 0.925 | 0.699   | 139.828 |
+| ID-DSN（2021）                  | DL-based | CNN Features         | ResNet50                        | √ | 0.933 | 0.718   | 31.167  |
+| ThickSiam (ours, TRBS-Net)     | DL-based | CNN Features         | TRB+TMRB                        | √ | 0.959 | 0.721   | 56.758  |
+| ThickSiam (ours, TRBS-Net+IKF) | DL-based | CNN Features         | TRB+TMRB                        | √ | **0.991**  | **0.755**    | 56.758  |
 
 ## Dataset
 
