@@ -20,7 +20,7 @@ We compared the ThickSiam Framework with other 19 state-of-the-art trackers incl
 | CN(2014)                       | CF-based | Color Table          | -                               | - | 0.859     | 0.609   | 8.763   |
 | DSST(2014)                     | CF-based | HOG                  | -                               | - | 0.782     | 0.596   | 9.72    |
 | Staple(2016)                   | CF-based | HOG+Color Histogram  | -                               | - | 0.776     | 0.58    | 10.887  |
-| SiamFC                         | DL-based | CNN Features         | AlexNet                         | √ | 0.902     | 0.663   | 127.174 |
+| SiamFC                         | DL-based | CNN Features         | AlexNet                         | √ | 0.902     | 0.663   | <font color=#00B050 >**127.174**</font> |
 | DCFNet(2017)                   | CF-based | CNN Features         | conv1 from VGG                  | √ | 0.833     | 0.644   | 12.4    |
 | ECO(2017)                      | CF-based | CNN Features         | ResNet18 with vgg-m conv1 layer | - | 0.856     | 0.645   | 3.998   |
 | STRCF(2018)                    | CF-based | HOG+Color Table      | -                               | - | 0.795     | 0.557   | 7.498   |
@@ -28,17 +28,20 @@ We compared the ThickSiam Framework with other 19 state-of-the-art trackers incl
 | DiMP(2019)                     | DL-based | CNN Features         | ResNet18                        | √ | 0.717     | 0.545   | 12.697  |
 | DiMP(2019)                     | DL-based | CNN Features         | ResNet50                        | √ | 0.747     | 0.597   | 11.239  |
 | SiamFC+(2019)                  | DL-based | CNN Features         | ResNet22                        | √ | 0.839     | 0.652   | 59.333  |
-| SIamRPN+(2019)                 | DL-based | CNN Features         | ResNet22                        | √ | 0.878     | 0.618   | 114.867 |
-| SiamRPN++(2019)                | DL-based | CNN Features         | AlexNet                         | √ | 0.883     | 0.656   | 144.783 |
+| SIamRPN+(2019)                 | DL-based | CNN Features         | ResNet22                        | √ | 0.878     | 0.618   | <font color=#0070C0 >**114.867**</font> |
+| SiamRPN++(2019)                | DL-based | CNN Features         | AlexNet                         | √ | 0.883     | 0.656   | <font color=#FF000 >**144.783**</font> |
 | SiamRPN++(2019)                | DL-based | CNN Features         | ResNet50                        | √ | 0.828     | 0.655   | 31.617  |
-| SiamFC++(2020)                 | DL-based | CNN Features         | AlexNet                         | √ | 0.925     | 0.699   | 139.828 |
-| ID-DSN（2021）                  | DL-based | CNN Features         | ResNet50                        | √ | 0.933     | 0.718   | 31.167  |
-| ThickSiam (ours, TRBS-Net)     | DL-based | CNN Features         | TRB+TMRB                        | √ | 0.959     | 0.721   | 56.758  |
-| ThickSiam (ours, TRBS-Net+IKF) | DL-based | CNN Features         | TRB+TMRB                        | √ | 0.991     | 0.755   | 56.758  |
+| SiamFC++(2020)                 | DL-based | CNN Features         | AlexNet                         | √ | <font color=#0070C0 >**0.925**</font> | <font color=#0070C0 >**0.699**</font>   | <font color=#ED8030 >**139.828**</font> |
+| ID-DSN（2021）                  | DL-based | CNN Features         | ResNet50                        | √ | <font color=#00B050 >**0.933**</font> | <font color=#00B050 >**0.718**</font>   | 31.167  |
+| ThickSiam (ours, TRBS-Net)     | DL-based | CNN Features         | TRB+TMRB                        | √ | <font color=#ED8030 >**0.959**</font> | <font color=#ED8030 >**0.721**</font>   | 56.758  |
+| ThickSiam (ours, TRBS-Net+IKF) | DL-based | CNN Features         | TRB+TMRB                        | √ | <font color=#FF000 >**0.991**</font>  | <font color=#FF000 >**0.755**</font>    | 56.758  |
 
 
 ## Dataset
-Coming soon
+
+<img src="dataset/dataset.png" />
+
+Google Drive and Baidu Yun are coming soon
 
 ## Installation 
 Coming soon
