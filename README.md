@@ -13,6 +13,8 @@ High-resolution satellite videos are playing an increasingly important role as a
 The tracking results of airplane-1 target
 </div>
 
+&nbsp;
+
 <div align=center>
 <img src = "demo/train-1.gif" width="240" height="480" />
 </div>
@@ -21,8 +23,10 @@ The tracking results of airplane-1 target
 The tracking results of train-1 target
 </div>
 
+&nbsp;
+
 <div align=center>
-<img src = "legend.png" />
+<img src = "demo/legend.png" />
 </div>
 
 ## Main Results
