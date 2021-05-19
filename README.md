@@ -19,8 +19,8 @@ High-resolution satellite videos are playing an increasingly important role as a
 
 <center>
 <figure>
-<img src="demo/airplane-1.gif" />
-<img src="demo/train-1.gif" width="240" height="480" />
+<img src="demo/airplane-1.gif" width="240" height="128" />
+<img src="demo/train-1.gif" width="120" height="240" />
 </figure>
 </center>
 
