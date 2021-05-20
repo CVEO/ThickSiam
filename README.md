@@ -25,7 +25,7 @@ The tracking results of airplane-1 target
 &nbsp;
 
 <div align=center>
-<img src = "demo/train-1.gif" width="240" height="480" />
+<img src = "demo/train-1.gif" />
 </div>
 
 <div align=center>
@@ -35,7 +35,7 @@ The tracking results of train-1 target
 &nbsp;
 
 <div align=center>
-<img src = "demo/train-2.gif" width="360" height="204" />
+<img src = "demo/train-2.gif" />
 </div>
 
 <div align=center>
