@@ -42,6 +42,8 @@ The tracking results of train-1 target
 The tracking results of train-2 target
 </div>
 
+&nbsp;
+
 <div align=center>
 <img src = "demo/legend.png" />
 </div>
