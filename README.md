@@ -50,6 +50,14 @@ The tracking results of train-2 target
 
 ## Main Results
 
+### Validation of The ThickSiam
+
+We modularly verified the effectiveness of the overall framework based on three training schemes: training with individual COCO dataset, training with individual DIOR dataset, and training with joint COCO and DIOR datasets. We stacked the original residual block and down-sampling residual block to assemble the baseline network. The precision plots and success plots about the comparison results of different methods with three training schemes are shown in the figure below.
+
+<img src="demo/plot-E1.png" />
+
+### Comparisons with State-of-the-Art Trackers on Our Constructed Testing Dataset
+
 We compared the ThickSiam Framework with other 19 state-of-the-art trackers including CF-based and DL-based methods with different features and backbones on our constructed testing dataset. They are MOSSE, CSK, KCF, CN, DSST, Staple, SiamFC, DCFNet, ECO, STRCF, ATOM, DiMP, SiamFC+, SiamRPN+, SiamRPN++, SiamFC++ and ID-DSN. The comparison results are shown in the following Table.
 
 |             Trackers           |  Methods |       Features       |            Backbones            | CUDA | Precision | Success |   FPS   |
@@ -75,6 +83,10 @@ We compared the ThickSiam Framework with other 19 state-of-the-art trackers incl
 | ID-DSN（2021）                  | DL-based | CNN Features         | ResNet50                        | √ | 0.933 | 0.718   | 31.167  |
 | ThickSiam (ours, TRBS-Net)     | DL-based | CNN Features         | TRB+TMRB                        | √ | 0.959 | 0.721   | 56.758  |
 | ThickSiam (ours, TRBS-Net+IKF) | DL-based | CNN Features         | TRB+TMRB                        | √ | **0.991**  | **0.755**    | 56.758  |
+
+The precision plots and success plots of the ablation experiments with the state-of-the-art trackers are shown in the figure below.
+
+<img src="demo/plot-E3.png" />
 
 ## Dataset
 
