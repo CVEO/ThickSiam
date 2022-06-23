@@ -2,12 +2,12 @@
 
 ## Introduction
 
-High-resolution satellite videos are playing an increasingly important role as a means of monitoring dynamic ground targets. Currently, objects in satellite videos are confronted with small size, partial occlusion, residual shadow, poor target-background discriminability, shape deformation and poor general field illumination challenges. To solve the above problems, we design a ThickSiam framework, which consists of a Thickened Residual Block Siamese Network (TRBS-Net) and a Remoulded Kalman Filter (RKF) module. The TRBS-Net is stacked by well-designed thickened residual blocks and thickened maxpooling residual block, while the RKF module is designed to simultaneously correct the trajectory and size of the target. In this paper, we propose an N-frame-convergence mechanism to deal with the burn-in period problem existed in RKF module and combine the results of TRBS-Net and RKF modules by frames. We also construct a testing dataset suitable for satellite video single object tracking (SOT) task. We conducted ablation experiments on our constructed dataset and compared the proposed ThickSiam framework with other nineteen state-of-the-art trackers including different features and backbones. The comparison results show that our ThickSiam tracker obtains a precision value of 0.991 and a success value of 0.755 while running at 56.849 frames per second (FPS) implemented on a single NVIDIA GTX1070Ti GPU.
+High-resolution satellite videos are playing an increasingly important role as a means of monitoring dynamic ground targets. Currently, objects in satellite videos are confronted with small size, partial occlusion, residual shadow, poor target-background discriminability, shape deformation, and poor general field illumination challenges. To solve the above problems, we design a ThickSiam framework in this paper, which consists of a Thickened Residual Block Siamese Network (TRBS-Net) and a Remoulded Kalman Filter (RKF) module. The TRBS-Net is stacked by well-designed thickened residual blocks and thickened maxpooling residual block, while the RKF module is designed to simultaneously correct the trajectory and size of the target. In this framework, we propose an N-frame-convergence mechanism to deal with the burn-in period problem existed in RKF module and combine the results of TRBS-Net and RKF modules by frames. We also construct a testing dataset suitable for satellite video single object tracking (SOT) task. We conducted ablation experiments on this dataset and compared the proposed ThickSiam framework with other 19 state-of-the-art trackers. The comparison results show that our ThickSiam tracker obtains a precision value of 0.991 and a success value of 0.755 while running at 56.849 frames per second (FPS) implemented on a single NVIDIA GTX1070Ti GPU.
 
 ### Challenges
 
 <div align=center>
-<img src = "demo/challenges.png" />
+<img src = "demo/issue-h.png" />
 </div>
 
 &nbsp;
@@ -52,7 +52,7 @@ The tracking results of train-2 target
 
 ### Validation of The ThickSiam
 
-We modularly verified the effectiveness of the overall framework based on three training schemes: training with individual COCO dataset, training with individual DIOR dataset, and training with joint COCO and DIOR datasets. We stacked the original residual block and down-sampling residual block to assemble the baseline network. The precision plots and success plots about the comparison results of different methods with three training schemes are shown in the figure below.
+We modularly verified the effectiveness of the overall framework based on three training schemes: training with individual COCO dataset, training with individual DIOR dataset, and training with joint COCO and DIOR datasets. We stacked the original residual block and down-sampling residual block to assemble the baseline network and compared it with TRBS-Net. We compared the RKF module with the standard Kalman Filter (KF for short), which only predicts the center point coordinates of the tracked object. The precision plots and success plots about the comparison results of different methods with three training schemes are shown in the figure below.
 
 <img src="demo/plot-E1.png" />
 
