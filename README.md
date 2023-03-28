@@ -94,11 +94,5 @@ The precision plots and success plots of the ablation experiments with the state
 
 Google Drive and Baidu Yun are coming soon
 
-## Installation 
-Coming soon
-
-## Quick Start
-Coming soon
-
 ## License
 Licensed under an MIT license.
