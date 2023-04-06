@@ -88,11 +88,27 @@ The precision plots and success plots of the ablation experiments with the state
 
 <img src="demo/plot-E3.png" />
 
-## Dataset
+## Download Links
 
+[*Google Drive*](https://drive.google.com/file/d/17s0Pc5jGJfVUd-_sP9xyXm9nIFRpRJdf/view?usp=sharing) | [*BaiduYun 百度云*](https://pan.baidu.com/share/init?surl=7B8QPrtnYUbD-DXcBK8bXQ&pwd=285e)
+
+## Screenshots of the Dataset 
 <img src="dataset/dataset.png" />
 
-Google Drive and Baidu Yun are coming soon
+## Citation
+If you like to use our work, please consider citing us:
+```
+@article{zhang2023high,
+  title={High-resolution satellite video single object tracking based on thicksiam framework},
+  author={Zhang, Xiaodong and Zhu, Kun and Chen, Guanzhou and Liao, Puyun and Tan, Xiaoliang and Wang, Tong and Li, Xianwei},
+  journal={GIScience \& Remote Sensing},
+  volume={60},
+  number={1},
+  pages={2163063},
+  year={2023},
+  publisher={Taylor \& Francis}
+}
+```
 
 ## License
 Licensed under an MIT license.
